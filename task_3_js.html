@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        "use strict";
+        let sum_1 = 10 + 10 + "10";
+        let sum_2 = 10 + "10" + 10;
+        let sum_3 = 10 + 10 + +"10";
+        let div_1 = 10 / -"";
+        let div_2 = 10 / +(2, 5);
+        alert(sum_1);
+        alert(sum_2);
+        alert(sum_3);
+        alert(div_1);
+        alert(div_2);
+        /*  1) прибавляем число к числу (10+10=20) и конкатенируем со строкой (20 + "10" = 2010);
+            2) конкатенируем число (10) со строкой ("10") и с числом(10) = 101010;
+            3) прибавляем число (10) к числу(10) и к строке, преобразованной при помощи унарного плюса в число (+"10" = 10) = 30;
+            4) число делим на - 0 (пустая строка);
+            5) число (10) делим на 5 = 2; */
+    </script>
+</body>
+
+</html>
