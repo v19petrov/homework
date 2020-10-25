@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        let contrib = prompt('Сколько рублей вы хотите положить в наш надежный банк "Раскольников"?');
+        const output = contrib.substr(contrib.length - 1, 1);
+        function out() {
+            if (output == 1) {
+                alert("Ваша сумма в " + contrib + " рубль успешно зачислена.");
+            }
+            else if (output >= 2 && output <= 4) {
+                alert("Ваша сумма в " + contrib + " рубля успешно зачислена.");
+            }
+            else if (output >= 5 && output <= 9 || output == 0) {
+                alert("Ваша сумма в " + contrib + " рублей успешно зачислена.");
+            }
+        }
+        out(output);
+    </script>
+</body>
+
+</html>
